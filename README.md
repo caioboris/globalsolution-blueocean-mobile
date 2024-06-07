@@ -2,6 +2,13 @@
 
 Este projeto é uma aplicação móvel para monitoramento de culturas de mariscos. Ele permite aos usuários cadastrar, visualizar, editar e excluir informações sobre as culturas de mariscos.
 
+## Integrantes
+- Lucas Petroni RM97861
+- Matheus Paulo Lima Delgado RM552189
+- Caio Boris RM552496
+- Nathaly Oliveira 552538
+- Denner Duarte 551938
+
 ## Tecnologias Utilizadas
 
 - React Native
