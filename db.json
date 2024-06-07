@@ -1,0 +1,18 @@
+{
+  "plantations": [
+    {
+      "id": "1",
+      "producerName": "John ",
+      "location": "Location 555",
+      "quantity": 100,
+      "species": "Species A"
+    },
+    {
+      "id": "2",
+      "producerName": "Jane Souza",
+      "location": "Location 2",
+      "quantity": 200,
+      "species": "Species B"
+    }
+  ]
+}
