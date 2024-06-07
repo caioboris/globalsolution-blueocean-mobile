@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './src/screens/HomeScreen';
-import DetailsScreen from './src/screens/DetailsScreen';
-import SettingsScreen from './src/screens/SettingsScreen';
-import { StyleSheet, View, Text } from 'react-native';
+import HomeScreen from './screens/HomeScreen.js'
+import ListScreen from  './screens/ListScreen.js'
+import CreateScreen from './screens/CreateScreen.js'
+import { StyleSheet } from 'react-native';
+
+import { FontAwesome } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,9 +19,21 @@ const App = () => {
           tabBarActiveTintColor: '#fff',
           tabBarInactiveTintColor: '#a3a3a3',
         }}>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Details" component={DetailsScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Home" component={HomeScreen} options={{
+          tabBarIcon:() =>(
+            <FontAwesome name='home' size={24} color="black"/>
+          ),
+        }} />
+        <Tab.Screen name="List" component={ListScreen} options={{
+          tabBarIcon:() =>(
+            <FontAwesome name='list' size={24} color="black"/>
+          ),
+        }} />
+        <Tab.Screen name="Create" component={CreateScreen} options={{
+          tabBarIcon:() =>(
+            <FontAwesome name='pencil' size={24} color="black"/>
+          ),
+        }} />
       </Tab.Navigator>
     </NavigationContainer>
   );
